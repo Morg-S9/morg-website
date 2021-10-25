@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /journal/2021-07-29/files
+Disallow: /journal/2021-07-29/images
+Disallow: /scripts/dl

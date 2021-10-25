@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Morg's Web Journal</title>
+		<link>https://morgs9.xyz/journal</link>
+		<description>My Web Journal RSS Feed. This feed is more of an internal tool to work with webhooks, but you can sub to it if you want.</description>
+		<language>en-us</language>
+		<image>
+			<title>Morg's Web Journal</title>
+			<link>https://morgs9.xyz</link>
+			<url>https://morgs9.xyz/favicon.png</url>
+			<width>512</width>
+			<height>512</height>
+		</image>
+		<item>
+			<title>test</title>
+			<pubDate>Mon 26 Jul 2021 11:55</pubDate>
+			<description>This is a test. Please disregard this lol.</description>
+			<author>Morg (thewarmachine2712@gmail.com)</author>
+		</item>
+		<item>
+			<title>test 2</title>
+			<pubDate>Fri 6 Aug 2021 12:43</pubDate>
+			<description>
+				This is another test. Please disregard this too.
+			</description>
+			<author>Morg (thewarmachine2712@gmail.com)</author>
+		</item>
+	</channel>
+</rss>
