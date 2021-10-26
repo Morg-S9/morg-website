@@ -1,10 +1,11 @@
 # Commit info file, no need to push to repo
-./commitinfo
+commitinfo
 
 # Firebase Files, shouldn't be pushed to repo
 public/
-./.firebaserc
-./firebase.json
+.firebaserc
+firebase.json
+.firebase/
 
 # Keep out the junk files that vim creates
 *.un~
