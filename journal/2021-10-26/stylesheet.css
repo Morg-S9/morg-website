@@ -1,8 +1,12 @@
 body {
-	background-color: #66b3ff;
+	background-color: #b3ffd9;
 }
 
 h1 {
+	font-family: 'Lucida Console';
+}
+
+h2 {
 	font-family: 'Lucida Console';
 }
 
