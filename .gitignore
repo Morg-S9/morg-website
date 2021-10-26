@@ -3,3 +3,7 @@
 
 # Firebase Public Folder, no need to push to repo
 public/
+
+# Keep out the junk files that vim creates
+*.un~
+*.html~
