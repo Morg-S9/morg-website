@@ -10,3 +10,6 @@ firebase.json
 # Keep out the junk files that vim creates
 *.un~
 *.html~
+
+# Folder for scripts that help me maintain the website, scripts will be pushed to repo via scripts folder
+helperscripts/
