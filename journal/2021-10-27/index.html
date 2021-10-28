@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 27 2021</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h3 id="download-markdown-file"><a href="https://morgs9.xyz/journal/2021-10-27/ENTRY.md">Download Markdown File</a></h3>
+<h1 id="october-27th-2021">October 27th, 2021</h1>
+<h3 id="hello-everyone-hope-you-all-are-doing-well">Hello everyone! Hope you all are doing well!</h3>
+<p>So the main point of this entry is how you can prevent Spotify auto-pause on Discord without client mods,<br>
+but first, you may notice that this looks… different.<br>
+Well that’s because:</p>
+<h4 id="im-writing-this-all-in-markdown-now">I’m writing this all in Markdown now!</h4>
+<p>It’s a lot easier for me to write all of this in Markdown (i don’t need to put <code>&lt;p&gt;</code> before every goddamn paragraph now, that’s a big one lol)<br>
+And it’s actually surprisingly easy to convert Markdown to HTML with just some software tools. (if you’re wondering, I use <a href="https://stackedit.io">Stackedit</a>)</p>
+<p>You may also notice the <code>Download Markdown File</code> button at the top of the screen. So now if you wish to download this and read it offline, you can!</p>
+<p>Anyways, onto the main point of the entry…</p>
+<h3 id="discord.-we-all-use-it-now.">Discord. We all use it now.</h3>
+<p>One of the biggest chat services in the world right now.</p>
+<p><em>Especially since the pandemic</em> <em><strong>cough cough</strong></em></p>
+<p>Anyways, it has a feature where you can link your Spotify account so your friends can see what your listening to, and either listen to it themselves, or even in a Listen Along.</p>
+<p>Unfortunately, with all this comes one <strong>really</strong> annoying drawback (at least for the people with really sensitive and audio bleedy microphones):</p>
+<h4 id="auto-pause">Auto-Pause</h4>
+<p>In order to comply with Spotify’s TOU (Terms of Use), to prevent audio being played over mic, if you transmit for more than 30 seconds, it automatically pauses your music.</p>
+<p>Now from what I’ve seen, this feature just causes more harm then good. Why?</p>
+<p>Well for one, if someone <strong>REALLY</strong> wanted to play Audio over mic, they could just… unlink their Spotify from Discord, or, just use another service, like YouTube.</p>
+<p>Now you could make the same argument for me: <code>just unlink your spotify lol</code><br>
+I’m gonna answer that with another question: why?<br>
+I shouldn’t have to give up a useful feature just because of Discord’s half-assed attempt to prevent Music Piracy.<br>
+So, I’m not gonna.</p>
+<p>Instead, I will show you how you can bypass this, without client modding.</p>
+<p>Now lemme just preface this with:</p>
+<h2 id="i-am-not-responsible-for-any-moderator-actions-taken-on-your-account-if-you-get-found-out-for-doing-this"><strong>I AM NOT RESPONSIBLE FOR ANY MODERATOR ACTIONS TAKEN ON YOUR ACCOUNT IF YOU GET FOUND OUT FOR DOING THIS</strong></h2>
+<p><strong>There is a decently high chance that Discord won’t like what we will be doing here.</strong><br>
+<strong>What we’re basically doing is removing Discord’s ability to access the Playback Modification part of the Spotify API</strong><br>
+<strong>And while</strong> <em><strong>technically,</strong></em> <strong>this isn’t against Discord’s TOS, they are a private company, and they can do whatever the fuck they want with your account for any reason.</strong> <a href="https://www.reddit.com/r/internetdrama/comments/9tdnl9/discord_drama_uallthefoxes_now_from_the_trust_and/"><strong>And knowing how petty</strong></a> <a href="https://youtu.be/UGJhITr7190"><strong>Discord’s Mod team can be,</strong></a> <strong>They could ban you for this if they REALLY wanted to.</strong><br>
+<strong>In any case, if you want to be risk-free of being banned, don’t do this, and just use Discord within it’s TOS.</strong></p>
+<h2 id="once-again-i-am-not-responsible-for-any-moderator-actions-taken-on-your-account-if-you-get-found-out-for-doing-this"><strong>ONCE AGAIN, I AM NOT RESPONSIBLE FOR ANY MODERATOR ACTIONS TAKEN ON YOUR ACCOUNT IF YOU GET FOUND OUT FOR DOING THIS</strong></h2>
+<p>Now with that out the way, let’s get back to it.</p>
+<p>So first, unlink your Spotify from Discord.<br>
+Open Discord and go to <code>User Settings &gt; Connections</code><br>
+and click the X button next to your Spotify account. It should look like this:</p>
+<p><img src="https://morgs9.xyz/journal/2021-10-27/images/1.png" alt="Image of Discord Connection"></p>
+<p>Next, go to your <a href="https://account.spotify.com">Spotify Account Settings Page</a>, and go to Apps. It should be near the bottom of the page. Find <code>Discord</code> and click Remove Access. That should look something like this:</p>
+<p><img src="https;//morgs9.xyz/journal/2021-10-27/images/2.png" alt="Image of Spotify Remove Access page"></p>
+<p>Now, go back to Discord and go back to <code>User Settings &gt; Connections</code> and click the Spotify link button. This will open a new tab in your browser.<br>
+<strong>Note that in the browser version of Discord, this will open in a temp window. For this to work, you’ll need to be in an actual tab. To switch to this, right click the top of the window (the part that shows the name of the window, not the URL bar.) and click something that looks like “Open in Tab”. It may look different depending on your browser.</strong></p>
+<p>Now login with Spotify if prompted. At this point, you should be at the authorize screen. That should look something like this:</p>
+<p><img src="https://morgs9.xyz/2021-10-27/images/3.png" alt="Spotify Authorize Screen"></p>
+<p>We’re gonna be messing with the Authorize URL to do this.<br>
+The URL should look something like this:</p>
+<pre><code>https://accounts.spotify.com/en/authorize?response_type=code&amp;client_id=redacted&amp;redirect_uri=https:%2F%2Fdiscord.com%2Fapi%2Fconnections%2Fspotify%2Fcallback&amp;scope=user-read-private%20user-read-playback-state%20user-modify-playback-state%20user-read-currently-playing&amp;state=redacted
+</code></pre>
+<p>Now the way that Discord authenticates with Spotify’s API is with something called OAuth, and OAuth bases permissions on something called scopes.<br>
+Notice the section of this URL?: <code>scope=user-read-private%20user-read-playback-state%20user-modify-playback-state%20user-read-currently-playing</code><br>
+These are the scopes that discord are requesting access for.<br>
+The one we’re interested in however, is <code>user-modify-playback-state</code>. That’s the scope that allows Discord to modify our playback state and in turn, auto-pause.<br>
+We are gonna be removing that scope, and in turn, removing Discord’s access to this part of the API. To do this, remove: <code>user-modify-playback-state%20</code>.</p>
+<p>Once you do that, reload the page. If you did it all right, your URL should look like this:</p>
+<pre><code>https://accounts.spotify.com/en/authorize?response_type=code&amp;client_id=redacted&amp;redirect_uri=https:%2F%2Fdiscord.com%2Fapi%2Fconnections%2Fspotify%2Fcallback&amp;scope=user-read-private%20user-read-playback-state%20user-read-currently-playing&amp;state=redacted
+</code></pre>
+<p>And your Spotify Authorize screen should now look like this:</p>
+<p><img src="https://morgs9.xyz/2021-10-27/images/4.png" alt="Spotify Authorization screen without modify scope"></p>
+<p>Notice the lack of the modify playback permission?<br>
+If you did it right, simply click Authorize.<br>
+Discord will now no longer be able to auto-pause!</p>
+<p>Now of course, like a lot of things in life, <strong>there are some drawbacks.</strong><br>
+For one, you can no longer join other’s listen-alongs. (you can still host your own, though.)<br>
+And you can no longer use the Listen on Spotify button if you wanna listen to a song a friend is listening to.</p>
+<p>But honestly, I rarely use those features anyways, so I don’t really mind.</p>
+<p>Anyways, that about wraps it up! I hope this guide was useful!</p>
+<p>If you have any questions, concerns, or if I messed anything up, do e-mail me at <a href="mailto:MorgS9@pm.me">MorgS9@pm.me</a>.</p>
+<h2 id="thanks-for-reading-and-i-hope-you-have-a-good-day">Thanks for reading, and I hope you have a good day!</h2>
+</div>
+</body>
+
+</html>
