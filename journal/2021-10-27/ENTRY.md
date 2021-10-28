@@ -69,7 +69,7 @@ Now, go back to Discord and go back to `User Settings > Connections` and click t
 
 Now login with Spotify if prompted. At this point, you should be at the authorize screen. That should look something like this:
 
-![Spotify Authorize Screen](https://morgs9.xyz/2021-10-27/images/3.png)
+![Spotify Authorize Screen](https://morgs9.xyz/journal/2021-10-27/images/3.png)
 
 We're gonna be messing with the Authorize URL to do this.
 The URL should look something like this:
@@ -89,7 +89,7 @@ https://accounts.spotify.com/en/authorize?response_type=code&client_id=redacted&
 ```
 And your Spotify Authorize screen should now look like this:
 
-![Spotify Authorization screen without modify scope](https://morgs9.xyz/2021-10-27/images/4.png)
+![Spotify Authorization screen without modify scope](https://morgs9.xyz/journal/2021-10-27/images/4.png)
 
 Notice the lack of the modify playback permission?
 If you did it right, simply click Authorize.

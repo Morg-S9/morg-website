@@ -76,7 +76,7 @@ and click the X button next to your Spotify account. It should look like this:</
 <p>Now, go back to Discord and go back to <code>User Settings &gt; Connections</code> and click the Spotify link button. This will open a new tab in your browser.<br>
 <strong>Note that in the browser version of Discord, this will open in a temp window. For this to work, you’ll need to be in an actual tab. To switch to this, right click the top of the window (the part that shows the name of the window, not the URL bar.) and click something that looks like “Open in Tab”. It may look different depending on your browser.</strong></p>
 <p>Now login with Spotify if prompted. At this point, you should be at the authorize screen. That should look something like this:</p>
-<p><img src="https://morgs9.xyz/2021-10-27/images/3.png" alt="Spotify Authorize Screen"></p>
+<p><img src="https://morgs9.xyz/journal/2021-10-27/images/3.png" alt="Spotify Authorize Screen"></p>
 <p>We’re gonna be messing with the Authorize URL to do this.<br>
 The URL should look something like this:</p>
 <pre><code>https://accounts.spotify.com/en/authorize?response_type=code&amp;client_id=redacted&amp;redirect_uri=https:%2F%2Fdiscord.com%2Fapi%2Fconnections%2Fspotify%2Fcallback&amp;scope=user-read-private%20user-read-playback-state%20user-modify-playback-state%20user-read-currently-playing&amp;state=redacted
@@ -90,7 +90,7 @@ We are gonna be removing that scope, and in turn, removing Discord’s access to
 <pre><code>https://accounts.spotify.com/en/authorize?response_type=code&amp;client_id=redacted&amp;redirect_uri=https:%2F%2Fdiscord.com%2Fapi%2Fconnections%2Fspotify%2Fcallback&amp;scope=user-read-private%20user-read-playback-state%20user-read-currently-playing&amp;state=redacted
 </code></pre>
 <p>And your Spotify Authorize screen should now look like this:</p>
-<p><img src="https://morgs9.xyz/2021-10-27/images/4.png" alt="Spotify Authorization screen without modify scope"></p>
+<p><img src="https://morgs9.xyz/journal/2021-10-27/images/4.png" alt="Spotify Authorization screen without modify scope"></p>
 <p>Notice the lack of the modify playback permission?<br>
 If you did it right, simply click Authorize.<br>
 Discord will now no longer be able to auto-pause!</p>
