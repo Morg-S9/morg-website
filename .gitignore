@@ -6,6 +6,8 @@ public/
 .firebaserc
 firebase.json
 .firebase/
+.github/
+firebase-debug.log
 
 # Keep out the junk files that vim creates
 *.un~
