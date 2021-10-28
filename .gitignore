@@ -13,5 +13,6 @@ firebase-debug.log
 *.un~
 *.html~
 
-# Folder for scripts that help me maintain the website, scripts will be pushed to repo via scripts folder
-helperscripts/
+# Folders and Files for scripts that help me maintain the website, scripts will be pushed to repo via scripts folder
+sitefiles
+sitedeploy.cmd
