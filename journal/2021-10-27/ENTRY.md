@@ -1,3 +1,4 @@
+#### [Go Back](https://morgs9.xyz/journal)
 
 ### [Download Markdown File](https://morgs9.xyz/journal/2021-10-27/ENTRY.md)
 
