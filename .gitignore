@@ -16,3 +16,4 @@ firebase-debug.log
 # Folders and Files for scripts that help me maintain the website, scripts will be pushed to repo via scripts folder
 sitefiles
 sitedeploy.cmd
+newjournal.cmd
