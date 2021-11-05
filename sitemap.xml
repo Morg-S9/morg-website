@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://morgs9.xyz</loc>
+		<loc>https://morgs9.xyz/</loc>
 	</url>
 	<url>
-		<loc>https://morgs9.xyz/coolpeople</loc>
+		<loc>https://morgs9.xyz/coolpeople/</loc>
 	</url>
 	<url>
-		<loc>https://morgs9.xyz/journal</loc>
+		<loc>https://morgs9.xyz/journal/</loc>
 	</url>
 	<url>
-		<loc>https://morgs9.xyz/journal/2021-07-29</loc>
+		<loc>https://morgs9.xyz/journal/2021-07-29/</loc>
 	</url>
 	<url>
-		<loc>https://morgs9.xyz/journal/2021-10-26</loc>
+		<loc>https://morgs9.xyz/journal/2021-10-26/</loc>
 	</url>
 	<url>
-		<loc>https://morgs9.xyz/journal/2021-10-27</loc>
+		<loc>https://morgs9.xyz/journal/2021-10-27/</loc>
 	</url>
 	<url>
-		<loc>https://morgs9.xyz/scripts</loc>
+		<loc>https://morgs9.xyz/scripts/</loc>
 	</url>
 </urlset>
