@@ -1,15 +1,18 @@
 body {
-	background-color: #b3edff;
+	background-color: #b3edff
 }
 
 h1 {
-	font-family: 'Aldrich'
+	font-family: 'Aldrich';
+	text-align: center
 }
 
 p {
-	font-family: 'Aldrich'
+	font-family: 'Aldrich';
+	text-align: center
 }
 
 a {
 	font-family: 'Aldrich';
+	text-align: center
 }

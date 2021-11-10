@@ -1,17 +1,21 @@
 body {
-  background-color: #000000;
+  background-color: #000000
 }
 
 h1 {
   color: white;
-  font-family: 'Aldrich'
+  font-family: 'Aldrich';
+  text-align: center
+
 }
 
 p {
   color: white;
-  font-family: 'Aldrich'
+  font-family: 'Aldrich';
+  text-align: center
 }
 
 a {
   color: white;
+  text-align: center
 }
