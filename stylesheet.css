@@ -1,43 +1,36 @@
 body {
 	background-color: #007BA7
 }
-
 h1 {
 	font-family: 'Aldrich';
 	text-align: center;
 	color: black
 }
-
 h2 {
 	font-family: 'Aldrich';
 	text-align: center;
 	color: black
 }
-
 h3 {
 	font-family: 'Aldrich';
 	text-align: center;
 	color: black
 }
-
 h4 {
 	font-family: 'Aldrich';
 	text-align: center;
 	color: black
 }
-
 p {
 	font-family: 'Aldrich';
 	text-align: center;
 	color: black
 }
-
 a {
 	font-family: 'Aldrich';
 	text-align: center;
 	color: black
 }
-
 .footer {
   position: fixed;
   left: 0;
